@@ -4,7 +4,7 @@ let notFound = document.querySelector(".not_found ");
 let defBox = document.querySelector(".def");
 let audioBox = document.querySelector(".audio");
 let loading = document.querySelector(".loading");
-let apiKey = ''; // your key should be there
+let apiKey = '032865cb-e2e3-41b5-9689-bf352cc24b1a'; // your key should be there
 
 searchBtn.addEventListener('click', function(e) {
 
