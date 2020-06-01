@@ -29,35 +29,40 @@ for (var i = 0; i < operator.length; i++) {
             var output = parseInt(getOutput());
             var history = getHistory();
 
-            // console.log(history);
+            // Method 1
+            // var operator = history[history.length - 1];
+            // history = parseInt(history.substring(0, history.length - 1));
 
-            var operator = history[history.length - 1];
-            history = parseInt(history.substring(0, history.length - 1));
+            // var result;
+            // switch (operator) {
+            //     case '+':
+            //         result = history + output;
+            //         break;
+            //     case '-':
+            //         result = history - output;
+            //         break;
+            //     case '/':
+            //         result = history / output;
+            //         break;
+            //     case '*':
+            //         result = history * output;
+            //         break;
+            // }
 
-            var result;
-            switch (operator) {
-                case '+':
-                    result = history + output;
-                    break;
-                case '-':
-                    result = history - output;
-                    break;
-                case '/':
-                    result = history / output;
-                    break;
-                case '*':
-                    result = history * output;
-                    break;
-            }
+            //Method 2 - More reliable and do sequence of execution
+            var expression = history + output;
+            var result = eval(expression);
 
             printResult(result);
             clearHistory();
 
         } else {
-            addHistory(getOutput() + this.value);
+            // we are adding the current element to the existing history with the operator
+            // getHistory() = 2+ , getOuput() = 4 and this.value = *
+            // no history become = 2+4* 
+            addHistory(getHistory() + getOutput() + this.value);
             clearOutput();
         }
-
     });
 }
 
