@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: CustomFont;
+    src: url(../fonts/Southampton-MRqp.ttf)
+}
+
+body {
+    background-color: #beef00;
+    justify-content: center;
+}
+
+.container {
+    margin: 10% auto;
+    width: 80%;
+    text-align: center;
+    height: 400px;
+    line-height: 4rem;
+    color: rgb(65, 44, 4);
+}
+
+.container h2 {
+    font-family: 'Quantico', sans-serif;
+}
+
+#clock {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Special Elite', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.quote {
+    font-family: CustomFont, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    margin-top: 0px;
+}
