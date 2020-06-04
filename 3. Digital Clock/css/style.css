@@ -18,7 +18,7 @@ body {
     width: 80%;
     text-align: center;
     height: 400px;
-    line-height: 4rem;
+    line-height: 5rem;
     color: rgb(65, 44, 4);
 }
 
@@ -29,13 +29,14 @@ body {
 #clock {
     font-family: 'Orbitron', sans-serif;
     font-family: 'Special Elite', cursive;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: bold;
 }
 
 .quote {
     font-family: CustomFont, Arial, Helvetica, sans-serif;
     font-size: 40px;
+    font-weight: 500;
 }
 
 h3 {
