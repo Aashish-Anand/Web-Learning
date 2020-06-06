@@ -11,6 +11,7 @@
 body {
     background-color: #beef00;
     justify-content: center;
+    user-select: none;
 }
 
 .container {

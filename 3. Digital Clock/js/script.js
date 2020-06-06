@@ -4,12 +4,13 @@ let meridian = "AM";
 function getTime() {
     let date = new Date();
 
-    var hours = date.getHours() % 12;
+    var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
     if (hours > 12) {
         meridian = "PM";
     }
+    hours = hours % 12;
 
     if (hours < 10) {
         hours = "0" + hours;
