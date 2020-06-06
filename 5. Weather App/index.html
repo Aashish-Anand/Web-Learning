@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headingDiv">
+            <p class="heading">Weather</p>
+        </div>
+
+        <div class="inputCity">
+            <input type="text" class="cityName" placeholder="Enter city">
+            <button class="submitCity"><img src="icons/search.png" alt=""></button>
+        </div>
+
+
+
+        <div class="error-notification">
+            Notification
+        </div>
+
+        <div class="weather-container">
+
+            <div class="weatherDetails">
+                <div class="temp-value">
+                    <p>- ° <span>c</span></p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="weather-icon"> <img src="icons/unknown.png" alt=""></div>
+                <div class="weather-description">
+                    <p>-</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
