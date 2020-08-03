@@ -22,8 +22,7 @@ async function playSong(playSong) {
     const response = await fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${playSong}`, {
         "method": "GET",
         "headers": {
-            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-            "x-rapidapi-key": "dffd8fabe4msh4bdc8d0e1d04d7fp1f67a3jsn752c64783a27"
+           
         }
     });
 
